@@ -58,6 +58,13 @@ Optional plotz says to frobnicate the bizbaz first.
 4. 异常中不要使用裸露的except，except后跟具体的exceptions。
 5. 异常中try的代码尽可能少。比如：
 
+`try:
+value = collection[key]
+except KeyError:
+return key_not_found(key)
+else:
+return handle_value(value)
+
 6. 使用startswith() and endswith()代替切片进行序列前缀或后缀的检查。比如：
 
 7. 使用isinstance()比较对象的类型。比如
