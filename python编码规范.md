@@ -58,7 +58,7 @@ Optional plotz says to frobnicate the bizbaz first.
 4. 异常中不要使用裸露的except，except后跟具体的exceptions。
 5. 异常中try的代码尽可能少。比如：
 
-`try:
+` try:
 value = collection[key]
 except KeyError:
 return key_not_found(key)
